@@ -29,7 +29,7 @@
 				Professional Tax - 
 			</td>
 			<td>
-				<input type="text" name="Please enter your annual income" value="200">
+				<input type="text" name="Please enter your annual income" value="2400">
 			</td>
 		</tr>
 		<tr>
@@ -91,9 +91,9 @@
 	</tbody></table>
 	<div style="display:flex;align-items: center;justify-content: center;flex-direction: row;">
     	<button class="btn btn-primary" id="calculator" style="margin-top: 10px;margin-left: 30px;" onclick="calculateTax()">Submit</button>
-        <button class="btn btn-primary" id="info" style="margin-top: 10px;margin-left: 30px;" onclick="knowYourSlab()">Know IT Slabs</button>
+        <button class="btn btn-primary" id="info" style="margin-top: 10px;margin-left: 30px;">Know IT Slabs</button>
     </div>
-	<div class="alert alert-secondary" role="alert" id="note" style="margin-top: 20px;">
+	<div class="alert alert-secondary" role="alert" id="note" style="display: none;margin-top: 20px;">
     <b>Slab Information</b> <br> 
     <ul>
   		<li>The Budget 2020 introduces a new regime under section 115BAC giving individuals and HUF taxpayers an option to pay income tax at lower rates. The new system is applicable for income earned from 1 April 2020 (FY 2020-21), which relates to AY 2021-22.</li>
@@ -179,4 +179,11 @@
   </div>
 </div>
 
+<script type="text/javascript">
+	$(document).ready(function () {
+		$("#info").click(function(){
+	    	$('#note').style.display="block";
+	  	});
+	})
+</script>
 </body></html>
