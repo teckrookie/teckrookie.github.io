@@ -7,7 +7,8 @@
   <script src="https://cdn.jsdelivr.net/npm/autonumeric@4.5.4"></script>
 </head>
 <body style="display:flex;align-items: center;justify-content: center;flex-direction: column;">
-<h1 style="display:flex;align-items: center;justify-content: center;">Income Tax Calculator</h1>
+<h1 style="display:flex;align-items: center;justify-content: center;">Income Tax Calculator</h1><br>
+<br>
 <div style="display:flex;align-items: center;justify-content: center;flex-direction: column;">
 	<table>
 		<tbody><tr>
@@ -89,7 +90,10 @@
 			</td>
 		</tr>
 	</tbody></table>
-	<button class="btn btn-primary" id="calculator" style="margin-top: 10px;margin-left: 30px;" onclick="calculateTax()">Submit</button>
+	<div style="display:flex;align-items: center;justify-content: center;flex-direction: row;">
+    	<button class="btn btn-primary" id="calculator" style="margin-top: 10px;margin-left: 30px;" onclick="calculateTax()">Submit</button>
+        <button class="btn btn-primary" id="info" style="margin-top: 10px;margin-left: 30px;" onclick="knowYourSlab()">Know IT Slabs</button>
+    </div>
 	<div class="alert alert-secondary" role="alert" id="note" style="margin-top: 20px;">
     <b>Some Additional Info</b> <br> 
     <ul>
