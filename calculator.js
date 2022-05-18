@@ -1,4 +1,4 @@
-inputElements = ['#total-income', '#pf', "#hra", '#exemptions-80c', '#exemptions-others']
+inputElements = ['#bs', '#pf', "#hra", '#80c', '#80d', '#da', '#lta', '#epf', '#sa', '#rent']
 CURRENCY_OPTIONS = {
   currencySymbol : '₹',
   digitalGroupSpacing: '2',
@@ -9,5 +9,5 @@ AutoNumeric.multiple(inputElements, CURRENCY_OPTIONS);
 
 function knowITSlab() {
     console.log('Know your Slab');
-    $('#note').css('display', 'block !important');
+    $('#note').css('display', 'block');
 }
