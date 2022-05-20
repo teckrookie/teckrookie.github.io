@@ -8,7 +8,93 @@
 </head>
 <body style="display:flex;align-items: center;justify-content: center;flex-direction: column;">
 <h1 style="display:flex;align-items: center;justify-content: center;">Income Tax Calculator</h1><br>
-	<div class="alert alert-secondary" role="alert" id="note" style="margin-top: 20px;">
+<div style="display:flex;align-items: center;justify-content: center;flex-direction: column;">
+	<table>
+		<tbody><tr>
+			<td>
+				Basic Salary - 
+			</td>
+			<td>
+				<input type="text" id="bs" name="Please enter your annual income">
+			</td>
+		</tr>
+			<tr><td>
+				Dearness Allowance - 
+			</td>
+			<td>
+				<input type="text" id="da" name="Please enter your annual income">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				House Rent Allowance - 
+			</td>
+			<td>
+				<input type="text" id="hra" name="Please enter your annual income">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Leave Travel Allowance - 
+			</td>
+			<td>
+				<input type="text" id="lta" name="Please enter your annual income">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Employee Provident Fund - 
+			</td>
+			<td>
+				<input type="text" id="epf" name="Please enter your annual income">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Special Allowance - 
+			</td>
+			<td>
+				<input type="text" id="sa" name="Please enter your annual income">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Actual House Rent Paid - 
+			</td>
+			<td>
+				<input type="text" id="rent" name="Please enter your annual income">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Section 80C Deductions (<small>Excluding EPF Contribution</small>) -
+			</td>
+			<td>
+				<input type="text" id="eightyc" name="Please enter your annual income">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Section 80D deductions - 
+			</td>
+			<td>
+				<input type="text" id="eightyd" name="Please enter your annual income">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				NPS -
+			</td>
+			<td>
+				<input type="text" id="nps" name="Please enter your annual income">
+			</td>
+		</tr>
+	</tbody></table>
+	<div style="display:flex;align-items: center;justify-content: center;flex-direction: row;">
+    	<button class="btn btn-primary" id="calculator" style="margin-top: 10px;margin-left: 30px;" onclick="calculateTax()">Submit</button>
+        <button class="btn btn-primary" id="info" style="margin-top: 10px;margin-left: 30px;" onclick="knowITSlab()">Know IT Slabs</button>
+    </div>
+	<div class="alert alert-secondary" role="alert" id="note" style="display :none;margin-top: 20px;">
     <b>Slab Information</b> <br> 
     <ul>
   		<li>The Budget 2020 introduces a new regime under section 115BAC giving individuals and HUF taxpayers an option to pay income tax at lower rates. The new system is applicable for income earned from 1 April 2020 (FY 2020-21), which relates to AY 2021-22.</li>
@@ -132,92 +218,6 @@
 	</ul>
 		
   </div>
-<div style="display:flex;align-items: center;justify-content: center;flex-direction: column;">
-	<table>
-		<tbody><tr>
-			<td>
-				Basic Salary - 
-			</td>
-			<td>
-				<input type="text" id="bs" name="Please enter your annual income">
-			</td>
-		</tr>
-			<tr><td>
-				Dearness Allowance - 
-			</td>
-			<td>
-				<input type="text" id="da" name="Please enter your annual income">
-			</td>
-		</tr>
-		<tr>
-			<td>
-				House Rent Allowance - 
-			</td>
-			<td>
-				<input type="text" id="hra" name="Please enter your annual income">
-			</td>
-		</tr>
-		<tr>
-			<td>
-				Leave Travel Allowance - 
-			</td>
-			<td>
-				<input type="text" id="lta" name="Please enter your annual income">
-			</td>
-		</tr>
-		<tr>
-			<td>
-				Employee Provident Fund - 
-			</td>
-			<td>
-				<input type="text" id="epf" name="Please enter your annual income">
-			</td>
-		</tr>
-		<tr>
-			<td>
-				Special Allowance - 
-			</td>
-			<td>
-				<input type="text" id="sa" name="Please enter your annual income">
-			</td>
-		</tr>
-		<tr>
-			<td>
-				Actual House Rent Paid - 
-			</td>
-			<td>
-				<input type="text" id="rent" name="Please enter your annual income">
-			</td>
-		</tr>
-		<tr>
-			<td>
-				Section 80C Deductions (<small>Excluding EPF Contribution</small>) -
-			</td>
-			<td>
-				<input type="text" id="eightyc" name="Please enter your annual income">
-			</td>
-		</tr>
-		<tr>
-			<td>
-				Section 80D deductions - 
-			</td>
-			<td>
-				<input type="text" id="eightyd" name="Please enter your annual income">
-			</td>
-		</tr>
-		<tr>
-			<td>
-				NPS -
-			</td>
-			<td>
-				<input type="text" id="nps" name="Please enter your annual income">
-			</td>
-		</tr>
-	</tbody></table>
-	<div style="display:flex;align-items: center;justify-content: center;flex-direction: row;">
-    	<button class="btn btn-primary" id="calculator" style="margin-top: 10px;margin-left: 30px;" onclick="calculateTax()">Submit</button>
-        <button class="btn btn-primary" id="info" style="margin-top: 10px;margin-left: 30px;">Know IT Slabs</button>
-    </div>
 </div>
 
 <script src="calculator.js"></script>
