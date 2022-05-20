@@ -1,4 +1,4 @@
-inputElements = ['#bs', "#hra", '#80c', '#80d', '#da', '#lta', '#epf', '#sa', '#rent', '#nps']
+inputElements = ['#bs', "#hra", '#eightyc', '#eightyd', '#da', '#lta', '#epf', '#sa', '#rent', '#nps']
 CURRENCY_OPTIONS = {
   currencySymbol : '₹',
   digitalGroupSpacing: '2',
