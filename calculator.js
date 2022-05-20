@@ -9,5 +9,5 @@ AutoNumeric.multiple(inputElements, CURRENCY_OPTIONS);
 
 function knowITSlab() {
     console.log('Know your Slab');
-    $('#note').css('display', 'block');
+    $('#note').css('visibility', 'visible');
 }
